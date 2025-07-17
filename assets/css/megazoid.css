@@ -311,7 +311,8 @@
 	font-family: InputSansNarrowWeb;
 	font-style: normal;
 	font-weight: 400;
-	src: url(/assets/fonts-custom/InputSansNarrow-Light_TRIAL.woff2) format("woff2");
+	src: url(../fonts-custom/InputSansNarrow-Light_TRIAL.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
 }
 
 @font-face {
@@ -319,7 +320,8 @@
 	font-family: InputSansNarrowWeb;
 	font-style: normal;
 	font-weight: 700;
-	src: url(/assets/fonts-custom/InputSansNarrow-Medium_TRIAL.woff2) format("woff2");
+	src: url(../fonts-custom/InputSansNarrow-Medium_TRIAL.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
 }
 
 @font-face {
