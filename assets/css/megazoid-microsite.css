@@ -1,4 +1,166 @@
-.slide {
-	margin: 3em 0;
-	border-bottom: 1px solid #ccc;
+/* Reset */
+img, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Megazoid Regular";
+	src:	url('../assets/fonts/Megazoid-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Megazoid Italic";
+	src:	url('../assets/fonts/Megazoid-Italic.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Megazoid Fill";
+	src:	url('../assets/fonts/Megazoid-Fill.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Megazoid Shade Left";
+	src:	url('../assets/fonts/Megazoid-ShadeLeft.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Megazoid Shade Right";
+	src:	url('../assets/fonts/Megazoid-ShadeRight.woff2') format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Input";
+	src:	url('../assets/fonts/Input.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Input";
+	src:	url('../assets/fonts/Input.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Variables */
+:root {
+	--purple: 	#5F3694;
+	--pink: 		#E4469B;
+	--orange: 	#FF7F2E;
+	--yellow:		#FFCB27;
+	--green: 		#A7B716;
+	--blue: 		#0297C2;
+	--navy: 		#222351;
+	--cream: 		#F5F5EF;
+	--text-ccc: #ccc;
+	--text-666: #666;
+	--text-333: #333;
+	--text-222: #222;
+	--text-000: #000;
+	--text-fff:	#fff;
+
+	/* Font stacks */
+	--font-mega-regular: "Megazoid Regular";
+	--font-mega-italic: "Megazoid Italic";
+	--font-mega-fill: "Megazoid Fill";
+	--font-mega-shade-l: "Megazoid Shade Left";
+	--font-mega-shade-r: "Megazoid Shade Right";
+	--font-input: "Input", system-ui, "Segoe UI", "Roboto Mono", monospace;
+}
+
+
+/* Base */
+
+div, span {
+	display: block;
+}
+
+#megazoid section {
+	margin: 0 auto;
+	border-bottom: 1px solid #000;
+	padding: 4em 3em;
+}
+
+/* hero */
+#megazoid .hero {
+	background: var(--cream);
+}
+
+/* overview */
+#megazoid .overview {
+	background: var(--purple);
+}
+
+/* spec-upper-caps */
+#megazoid .spec-upper-caps {
+	background: var(--pink);
+}
+
+/* spec-shades */
+#megazoid .spec-shades {
+	background: var(--yellow);
+}
+
+/* history */
+#megazoid .history {
+	background: var(--cream);
+}
+
+/* spec-styles */
+#megazoid .spec-styles {
+	background: var(--navy);
+}
+
+/* letter-field */
+#megazoid .letter-field {
+	background: var(--cream);
+}
+
+/* calculator */
+#megazoid .calculator {
+	background: var(--cream);
+}
+
+/* spec-italics */
+#megazoid .spec-italics {
+	background: var(--purple);
+}
+
+/* spec-roadway */
+#megazoid .spec-roadway {
+	background: var(--yellow);
+}
+
+/* opentype */
+#megazoid .opentype {
+	background: var(--cream);
+}
+
+/* spec-regular */
+#megazoid .spec-regular {
+	background: var(--purple);
+}
+
+/* spec-thankyou */
+#megazoid .spec-thankyou {
+	background: #ccc;
+}
+
+/* characters */
+#megazoid .characters {
+	background: var(--cream);
 }

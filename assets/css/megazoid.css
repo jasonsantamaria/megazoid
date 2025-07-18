@@ -311,7 +311,7 @@
 	font-family: InputSansNarrowWeb;
 	font-style: normal;
 	font-weight: 400;
-	src: url(../fonts-custom/InputSansNarrow-Light_TRIAL.woff2) format("woff2");
+	src: url(../assets/fonts-custom/InputSansNarrow-Light_TRIAL.woff2) format("woff2");
 	font-feature-settings: "kern" 1;
 }
 
@@ -320,7 +320,7 @@
 	font-family: InputSansNarrowWeb;
 	font-style: normal;
 	font-weight: 700;
-	src: url(../fonts-custom/InputSansNarrow-Medium_TRIAL.woff2) format("woff2");
+	src: url(../assets/fonts-custom/InputSansNarrow-Medium_TRIAL.woff2) format("woff2");
 	font-feature-settings: "kern" 1;
 }
 
@@ -335,20 +335,47 @@
 
 @font-face {
 	font-display: swap;
-	font-family: Megazoid-RegularX;
+	font-family: Megazoid;
 	font-style: normal;
 	font-weight: 400;
-	src: url(/assets/fonts/Megazoid/ascii/Megazoid-Regular_TRIAL.eot);
-	src: url(/assets/fonts/Megazoid/ascii/Megazoid-Regular_TRIAL.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/Megazoid/ascii/Megazoid-Regular_TRIAL.woff2) format("woff2"), url(/assets/fonts/Megazoid/ascii/Megazoid-Regular_TRIAL.woff) format("woff")
+	src: url(../fonts/Megazoid-Regular.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
 }
 
 @font-face {
 	font-display: swap;
-	font-family: Megazoid-Regular;
+	font-family: Megazoid;
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/Megazoid-Italic.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Megazoid-Fill;
 	font-style: normal;
 	font-weight: 400;
-	src: url(/assets/fonts/Megazoid/full/Megazoid-Regular_TRIAL.eot);
-	src: url(/assets/fonts/Megazoid/full/Megazoid-Regular_TRIAL.eot?#iefix) format("embedded-opentype"), url(/assets/fonts/Megazoid/full/Megazoid-Regular_TRIAL.woff2) format("woff2"), url(/assets/fonts/Megazoid/full/Megazoid-Regular_TRIAL.woff) format("woff")
+	src: url(../fonts/Megazoid-Fill.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Megazoid-ShadeLeft;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Megazoid-ShadeLeft.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
+}
+
+@font-face {
+	font-display: swap;
+	font-family: Megazoid-ShadeRight;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Megazoid-ShadeRight.woff2) format("woff2");
+	font-feature-settings: "kern" 1;
 }
 
 blockquote,
