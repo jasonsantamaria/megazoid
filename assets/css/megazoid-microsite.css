@@ -12,37 +12,37 @@ ul {
 /* Fonts */
 @font-face {
 	font-family: "Megazoid Regular";
-	src:	url('../assets/fonts/Megazoid-Regular.woff2') format('woff2');
+	src:	url('../fonts/Megazoid-Regular.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Megazoid Italic";
-	src:	url('../assets/fonts/Megazoid-Italic.woff2') format('woff2');
+	src:	url('../fonts/Megazoid-Italic.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Megazoid Fill";
-	src:	url('../assets/fonts/Megazoid-Fill.woff2') format('woff2');
+	src:	url('../fonts/Megazoid-Fill.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Megazoid Shade Left";
-	src:	url('../assets/fonts/Megazoid-ShadeLeft.woff2') format('woff2');
+	src:	url('../fonts/Megazoid-ShadeLeft.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Megazoid Shade Right";
-	src:	url('../assets/fonts/Megazoid-ShadeRight.woff2') format('woff2');
+	src:	url('../fonts/Megazoid-ShadeRight.woff2') format('woff2');
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Input";
-	src:	url('../assets/fonts/Input.woff2') format('woff2');
+	src:	url('../fonts/Input.woff2') format('woff2');
 	font-weight: 100 900;
 	font-style: normal;
 	font-display: swap;
@@ -50,7 +50,7 @@ ul {
 
 @font-face {
 	font-family: "Input";
-	src:	url('../assets/fonts/Input.woff2') format('woff2');
+	src:	url('../fonts/Input.woff2') format('woff2');
 	font-weight: 100 900;
 	font-style: italic;
 	font-display: swap;
@@ -91,8 +91,19 @@ div, span {
 
 #megazoid section {
 	margin: 0 auto;
-	border-bottom: 1px solid #000;
-	padding: 4em 3em;
+	border: none;
+	padding: 12rem 3rem 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	#megazoid section {
+		padding: 2rem 2rem;
+		min-height: auto !important;
+	}
 }
 
 /* hero */
@@ -101,18 +112,119 @@ div, span {
 }
 
 /* overview */
-#megazoid .overview {
+#megazoid .overview,
+#megazoid .overview p {
 	background: var(--purple);
+	color: #D6BEED;
+	font-family: var(--font-mega-regular);
+	font-size: clamp(30px, 8vw, 60px);
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+#megazoid .overview {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	#megazoid .overview,
+	#megazoid .overview p {
+		font-size: clamp(16px, 4vw, 32px);
+	}
+}
+
+#megazoid .overview p + p {
+	margin-top: 1rem;
 }
 
 /* spec-upper-caps */
 #megazoid .spec-upper-caps {
 	background: var(--pink);
+	font-family: var(--font-mega-regular);
+	color: var(--yellow);
+	font-size: clamp(40px, 12vw, 240px);
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	padding: 6rem 1rem 4rem;
 }
 
 /* spec-shades */
 #megazoid .spec-shades {
 	background: var(--yellow);
+	font-size: clamp(40px, 8vw, 120px);
+	line-height: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: clamp(2rem, 4vw, 5rem);
+}
+
+@media (max-width: 768px) {
+	#megazoid .spec-shades {
+		flex-direction: column;
+		gap: 2rem;
+		align-items: center;
+		font-size: clamp(30px, 15vw, 80px);
+		padding: 3rem 3rem 2rem;
+	}
+	
+	#megazoid .spec-shades .shade-right,
+	#megazoid .spec-shades .shade-left {
+		width: 100%;
+		max-width: 95vw;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+#megazoid .spec-shades .shade-right,
+#megazoid .spec-shades .shade-left {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	flex: 0 1 auto;
+}
+
+#megazoid .spec-shades .shade-right {
+	text-transform: uppercase;
+}
+
+#megazoid .spec-shades .layered-wrap {
+	display: inline-block;
+	position: relative;	
+}
+
+#megazoid .spec-shades .layered-wrap span {
+	display: block;
+}
+
+#megazoid .spec-shades .layered-wrap .bot-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	color: var(--green);
+}
+
+#megazoid .spec-shades .shade-right .layered-wrap .bot-layer {
+	font-family: var(--font-mega-shade-r);
+}
+
+#megazoid .spec-shades .shade-left .layered-wrap .bot-layer {
+	font-family: var(--font-mega-shade-l);
+}
+
+#megazoid .spec-shades .layered-wrap .top-layer {
+	position: relative;
+	z-index: 2;
+	font-family: var(--font-mega-regular);
+	color: var(--cream);
 }
 
 /* history */
